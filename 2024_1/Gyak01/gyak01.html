@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+code {
+  font-family: Consolas, Monaco, Menlo, "Courier New", monospace;
+  color: darkgreen;
+  background-color: #f1f1f1;
+  padding: 0px 2px;
+  font-size: 95%;
+  font-weight: bold;
+  
+  background-image: radial-gradient(ellipse farthest-corner at 100% 100%, #c4c4c4, #ffffff);
+}
+</style>
+</head>
+
+<body>
+
+<h1>1. gyakorlat</h1>
+<h2>Bevezetés</h2>
+<h3>Kötelező feladatok</h3>
+<h4>Terminál használat</h4>
+<ol>
+<li>Írd ki, hogy melyik a kurrens könyvtár ( <strong>pwd</strong> ).</li>
+<li>Listázd ki, hogy ebben a könyvtárban milyen fájlok és mappák vannak ( <strong>ls</strong> ).</li>
+<li>Nézd meg a fájlok és könyvtárak részletes adatait. Mikor és ki hozta ezeket létre ( <strong>ls -l</strong> )? Nézd meg, milyen további kapcsolói vannak az <strong>ls</strong> parancsnak ( <strong>man ls</strong> ).</li>
+<li>Hozz létre egy könyvtárat ( <strong>mkdir</strong> ).</li>
+<li>Lépj be a könyvtárba ( <strong>cd</strong> ). Ellenőrizd le, hogy a kurrens könyvtár tényleg megváltozott-e. Lépj vissza a szülő könyvtárba ( <strong>cd ..</strong> ), majd újra a létrehozott könyvtárba.</li>
+<li>Hozz létre egy szövegfájlt, és írd ki a tartalmát ( <strong>cat</strong> ). A <strong>cat</strong> parancs a concatenate szó rövidítése. Hogy lehet több fájl tartalmát egymás után konkatenálva kiírni?</li>
+<li>Másold le a szövegfájlt ( <strong>cp</strong> ) az aktuális mappába, majd az eggyel feljebb lévő mappába. Ellenőrizd, hogy megtörtént-e a másolás, majd lépj vissza az eredeti fájlt tartalmazó könyvtárba.</li>
+<li>Nevezd át az aktuális mappában lévő másolatot ( <strong>mv</strong> ).</li>
+<li>(a Hello world után) Távolítsd el ( <strong>rm</strong> ) a fordítással létrejövő futtatható
+állományt ( <em>a.out</em> )! Lépj át a szülő könyvtárba, helyezd át ide a forrást, majd töröld ki a korábban létrehozott mappát ( <strong>rm -r</strong> )!</li>
+</ol>
+<h4>Standard I/O</h4>
+<ol>
+<li>Írj programot, amely kiírja a képernyőre, hogy <em>Hello World!</em> (Ezt variáljuk: mutassuk meg, mi a warning, mi az error, töröljünk ki annyi szóközt, amennyit lehet, nézzük meg, mi a különbség a szóközzel és a tabulátorral való behúzás között, stb.)</li>
+</ol>
+<h3>Gyakorló feladatok</h3>
+<h4>Terminál használat</h4>
+<ol>
+<li>Írd ki, hogy a fájlodban hány sor, szó és karakter található ( <strong>wc</strong> ). Írd ki, csak a fájl sorainak számát. Ha nem tudod, hogy ezt milyen kapcsolóval lehet megcsinálni, nézd meg a manual-ban.</li>
+<li>Írj programot, mely kiírja a képernyőre, hogy <em>Hello world</em>. A program kimenetét irányítsd bele a <strong>wc</strong> nevű programba, ami kiírja a kimeneted sorainak, szavainak és karaktereinek számát.</li>
+</ol>
+<h4>Standard I/O</h4>
+<ol>
+<li>Írj programot, amely kiírja a nevedet.</li>
+<li>Írj programot, mely kiírja két szám összegét.</li>
+<li>Írj programot, melyben elosztasz két számot. Írd ki az eredményt. Mi történik, ha az osztó 0? Mi történik, ha <code>int</code> vagy <code>float</code> típusú változókat használunk?</li>
+</ol>
+<blockquote>
+<ul>
+<li>Használd a <code>%f</code> formázó karaktert. Figyelj oda, hogy kiíráskor két tizedesig
+írja csak ki az eredményt.</li>
+<li>Használd a <code>%d</code> formázó karaktert. Nézd meg, hogy mi történik.</li>
+<li>A program fordításánál használd a <strong>-W, -Wall, -Wextra</strong> és <strong>-pedantic</strong> kapcsolókat. Vajon fordítási hibát okoz, ha hibás formázó karaktert használsz?</li>
+</ul>
+</blockquote>
+<ol start="4">
+<li>Írj programot, melyben kiszámolod egy négyszög, illetve egy kör kerületét és területét. A négyszög két oldalát, illetve a kör sugarát kérd be a standard inputról.</li>
+</ol>
+<blockquote>
+<ul>
+<li>Használd a <code>scanf(“%d”, &amp;a)</code> függvényt. Használd az <code>&amp;</code> operátort, amely a
+változó címét adja vissza. A pi értékét vedd <em>3.1415</em>-nek.</li>
+</ul>
+</blockquote>
+<ol start="5">
+<li>Írj programot, ami a neveden köszönt. A nevedet tárold változóban.</li>
+</ol>
+<blockquote>
+<ul>
+<li>Használd a <code>char[]</code> típust, és a <code>%s</code> formázó karaktert. Figyelj oda, tömböknél
+fontos a szintaxis: <code>char name[10]</code>.</li>
+</ul>
+</blockquote>
+<h3>Haladó feladatok</h3>
+<h4>Terminál használat</h4>
+<ol>
+<li>Készítsünk pár szöveges fájlt, az egyikben rejtsük el az <em>alma</em> szót. A <strong>grep</strong>
+program segítségével keressük meg mely fájlban van elrejtve az <em>alma</em>.</li>
+<li>Készítsünk több könyvtár mély könyvtárszerkezetet. Rejtsünk el egy <em>alma.txt</em> nevű fájlt valahol. A könyvtárszerkezet legtetejéről találjuk meg az elrejtett fájlt a <strong>find</strong> parancs segítségével.</li>
+</ol>
+<h4>Standard I/O</h4>
+<ol>
+<li>Írj programot, mely a napok számát átszámolja évekre, hetekre és napokra. Pl. 375 nap = 1 év 1 hét 3 nap. Mindig csak a nagyobb egység maradékával dolgozz.</li>
+<li>Készíts egy Fahrenheit-Celsius átalakító programot ( <em>C = (F-32)/1.8</em> ). Írd ki a [-20; 200] intervallum Fahrenheit értékeit 10-es léptékkel, és a hozzájuk tartozó Celsius-fokot.</li>
+</ol>
+
+</body>
+</html>

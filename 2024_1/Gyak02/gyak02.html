@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+code {
+  font-family: Consolas, Monaco, Menlo, "Courier New", monospace;
+  color: darkgreen;
+  background-color: #f1f1f1;
+  padding: 0px 2px;
+  font-size: 95%;
+  font-weight: bold;
+  
+  background-image: radial-gradient(ellipse farthest-corner at 100% 100%, #c4c4c4, #ffffff);
+}
+</style>
+</head>
+
+<body>
+
+    <h1>2. gyakorlat</h1>
+    <h2>Alaptípusok, vezérlési szerkezetek</h2>
+    <p><em><strong>Emlékeztető:</strong></em> Fordítás közben használd a <strong>-W, -Wall, -Wextra, -pedantic</strong> kapcsolókat!</p>
+    <h3>Kötelező feladatok</h3>
+    <ol>
+    <li>Deklarálj egy <code>int</code> típusú változót, és írd ki az értékét. Figyeld meg mi egy változó kezdőértéke!</li>
+    <li>Adj új értéket az előző változónak ( lehet konstans: <code>const</code> vagy <code>scanf()</code>-el beolvasva a billentyűzetről ), majd írd ki, hogy a változó értéke páros vagy páratlan.</li>
+    <li>Írd ki, hogy a szám pozitív, negatív, vagy nulla-e.</li>
+    <li>Próbálj meg értékül adni az <code>int</code> típusú változónak egy valós számot, egy karaktert, egy logikai ( <code>bool</code> ) értéket, és egy karakter láncot (<em>stringet</em>). Ha sikerül az értékadás, akkor írd ki a változó értékét.</li>
+    <li>Az előző feladat mintájára vizsgáld meg az összes alaptípus közti átjárhatóságot. Minden alaptípus átkonvertálható mindegyik másikra? Ha igen, akkor mi a konverzió szabálya?</li>
+    <li>Határozd meg, hogy melyik a legnagyobb és legkisebb ábrázolható egész szám ( <code>sizeof()</code> ). A legnagyobb ábrázolható egész számot tedd egy változóba, majd adj a változóhoz 1-et. Figyeld meg mi lett az eredmény!</li>
+    </ol>
+    <blockquote>
+    <ul>
+    <li>Egyes Linux rendszereken a <code>math.h</code> könyvtár függvényeinek használata problémás lehet, mert a linker nem találja meg a referenciákat. A fordításkor a parancs végén a <strong>-lm</strong> kapcsolóval orvosolható a probléma a linker megfelelően fog működni.</li>
+    </ul>
+    </blockquote>
+    <ol start="7">
+    <li>Határozd meg két szám átlagát. Figyelj arra, hogy az eredmény valós szám!</li>
+    </ol>
+    <h3>Gyakorló feladatok</h3>
+    <ol>
+    <li>Készíts egy Fahrenheit-Celsius átalakító programot ( <em>C = (F-32)/1.8</em> ). Írd ki a [-20; 200] intervallum Fahrenheit értékeit 10-es léptékkel, és a hozzájuk tartozó Celsius-fokot.</li>
+    <li>Írd ki két sorban a <em>&quot;Hello&quot;</em> és <em>&quot;world&quot;</em> szavakat, egy <code>printf()</code> hívással. A két szót tedd idézőjelek közé a kimenetben.</li>
+    <li>Írj programot, ami bekér egy számot és megfordítja azt. Csak aritmetikai műveleteket használj. <em>Pl.: 12345 -&gt; 54321</em></li>
+    <li>Írd ki egy szám összes osztóját.</li>
+    <li>Határozd meg két szám legnagyobb közös osztóját, lehet brute force, <a href="https://hu.wikipedia.org/wiki/Legnagyobb_k%C3%B6z%C3%B6s_oszt%C3%B3">kivonásos módszer</a> vagy az <a href="https://hu.wikipedia.org/wiki/Euklideszi_algoritmus">Euklideszi algoritmus</a></li>
+    <li>Írj ki egy 10x10-es szorzótáblát. Az egy sorban lévő számokat tabulátorral válaszd el.</li>
+    <li>Írd ki 0-tól 1-ig a valós számokat 0.1-es lépésközzel.</li>
+    <li>Rajzolj ki egy üres sakktáblát. A sötét mezőket [] jelölje, a világosakat pedig <em>két space</em>. Használd a kettővel való oszthatóságot.</li>
+    <li>Írd ki, hogy a géped hány bájton ábrázol egy <code>int</code>, <code>long int</code>, <code>unsigned int</code>, <code>unsigned long int</code>, <code>char</code>, <code>bool</code>, <code>float</code>, <code>double</code>, <code>long double</code> értéket.</li>
+    <li>Vizsgáld meg egy számról, hogy palindrom-e. A megoldáshoz csak aritmetikai műveleteket használj. <em>Pl.: 12321 palindrom, de 12345 nem az.</em></li>
+    </ol>
+    <h3>Haladó feladatok</h3>
+    <ol>
+    <li>Határozd meg két egész számról, hogy barátságosak-e. Két egész szám barátságos, ha az egyik önmagánál kisebb osztóinak összege megegyezik a másikkal, és fordítva. <em>Pl.: 220 és 284</em></li>
+    <li>Határozd meg, hogy egy adott szám prím-e. Írd ki 1000-ig a prímeket.</li>
+    <li>Add meg egy másodfokú egyenlet megoldásait.</li>
+    </ol>
+    <blockquote>
+    <ul>
+    <li>Általános alak: <em>ax<sup>2</sup>+bx+c=0, ahol a,b,c∈ ℝ és a ≠ 0</em></li>
+    <li>Ne felejtkezz el a megoldhatóság ellenőrzéséről!</li>
+    </ul>
+    </blockquote>
+    <ol start="4">
+    <li>Az opcionális feladatoknál kiírtuk különböző alaptípusok bájtban megadott méretét. Határozzuk meg ugyanezt az ezekre a típusokra mutató pointerek, illetve ilyen típusú elemeket tartalmazó tömbök esetében is.</li>
+    </ol>
+    
+
+
+</body>
+</html>
