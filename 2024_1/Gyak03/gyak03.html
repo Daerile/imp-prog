@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>ImpProg_gy03</title>
+  <meta charset="UTF-8">
+
+  <style>
+    code {
+      font-family: Consolas, Monaco, Menlo, "Courier New", monospace;
+      color: darkgreen;
+      background-color: #f1f1f1;
+      padding: 0px 2px;
+      font-size: 95%;
+      font-weight: bold;
+  
+      background-image: radial-gradient(ellipse farthest-corner at 100% 100%, #c4c4c4, #ffffff);
+    } 
+  </style>
+</head>
+
+<body>
+    
+    <h1>3. gyakorlat</h1>
+    <h2>Típusok, vezérlési szerkezetek gyakorlása</h2>
+    <p><em><strong>Javaslat:</strong></em> Az egyes feladatokat szervezzük ki saját alprogramba!</p>
+    <h3>Kötelező feladatok</h3>
+    <ol>
+    <li>Írd ki, hogy a géped hány bájton ábrázol egy <code>int</code>, <code>long int</code>, <code>unsigned int</code>, <code>unsigned long int</code>, <code>char</code>, <code>_Bool</code>, <code>float</code>, <code>double</code>, <code>long double</code> értéket.</li>
+    <li>Próbáljuk ki az operator chaining-et (a&lt;b&lt;c)!</li>
+    <li>Deklarálj egy <code>unsigned int</code> típusú változót. Számold ki, hogy mekkora lehet a legnagyobb érték, amit el lehet ebben tárolni. Add értékül a változónak ezt a számot, majd egy következő utasításban adj hozzá egyet. Írd ki a megnövelt értéket.</li>
+    <li>Írj programot, mely a standard inputról bekért számról eldönti, hogy szökőév-e. Szökőév minden néggyel osztható év, kivéve, ami százzal is osztható.  Viszont a négyszázzal oszthatók szintén szökőévek lesznek.</li>
+    </ol>
+    <blockquote>
+    <ul>
+    <li>A megoldásban <strong>NE</strong> használj <code>if</code>-et!</li>
+    </ul>
+    </blockquote>
+    <h3>Gyakorló feladatok</h3>
+    <ol>
+    <li>Kitalálós játék (guessing): Mindaddig olvass be számot, míg az nem egyezik az általad választottal (először lehet beégetett konstans (<code>const</code>) vagy <code>#define</code>, aztán nézd meg/használd a <code>rand()</code> függvényt). Hibás tipp esetén segíts, hogy túl kicsi vagy túl nagy volt-e a tipp.</li>
+    </ol>
+    <blockquote>
+    <ul>
+    <li>Többféle ciklussal is próbálj megoldást adni</li>
+    <li>Próbáld ki hogyan helyettesíthetőek az <code>if</code> utasítások a '<code>?</code>' operátorral</li>
+    </ul>
+    </blockquote>
+    <ol start="2">
+    <li>Egészítsd ki a guessing programot a hibás próbálkozások számlálásával, majd ennek értéke alapján adj szöveges értékelést!</li>
+    </ol>
+    <blockquote>
+    <ul>
+    <li>Kezdetnek egyszerűen kiírod, hogy hány próbálkozásból sikerült</li>
+    <li>Aztán a próbálkozások függvényében más-más dicséretet adsz a kimenetre ( Hasznos vezérlési szerkezet ehhez: <code>switch() case</code>)</li>
+    </ul>
+    </blockquote>
+    <ol start="3">
+    <li>Egészítsd ki a guessing programot, hogy e játék elején nehézségi szintet lehessen változtatni. Például:</li>
+    </ol>
+    <blockquote>
+    <ul>
+    <li><strong>könnyű:</strong> 1-10 között választ a program kitalálandó számot.</li>
+    <li><strong>közepes:</strong> 1-100 között</li>
+    <li><strong>nehéz:</strong> 1-10000 között</li>
+    </ul>
+    </blockquote>
+    <ol start="4">
+    <li>Nézd meg, milyen nem definiált viselkedések fordulhatnak elő C programokban: <a href="https://gist.github.com/Earnestly/7c903f481ff9d29a3dd1">Github lista</a></li>
+    </ol>
+    <h3>Haladó feladatok</h3>
+    <ol>
+    <li>Szervezd úgy a guessing program kódját, hogy a <code>main()</code> függvényen kívül még három másik függvény szerepeljen (pl.: get_target, guessing, evaluate). Legyen minden függvénynek elődeklarációja is.</li>
+    <li>Rajzold ki a Pascal háromszög első n sorát (n-et kérd be)!</li>
+    <li>Olvass utána, hogy a C milyen bitműveleteket támogat (illetve ezeknek milyen gyakorlati haszna lehet): <a href="https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/">Bitműveletek</a></li>
+    </ol>
+    <h3>Verseny/házi feladat</h3>
+    <ol>
+    <li>Hányféleképpen tudod a 42-t kiíratni a képernyőre? Csak előjeles (<code>signed</code>), egész (<code>int</code>) típusokat, literálokat használj. Egyetlen <code>char</code> típusú változót használhatsz. Az értékadás kivételével más operátor nem használható.</li>
+    </ol>
+    <blockquote>
+    <ul>
+    <li>Néhány tipp: oktális, hexa literálok, típuskonverziók, túlcsordulás.</li>
+    <li>Több mint 20 féle megoldás képzelhető el!</li>
+    </ul>
+    </blockquote>
+  
+</body>
+</html>
