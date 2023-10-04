@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>ImpProg_gy04</title>
+  <meta charset="UTF-8">
+
+  <style>
+    code {
+      font-family: Consolas, Monaco, Menlo, "Courier New", monospace;
+      color: darkgreen;
+      background-color: #f1f1f1;
+      padding: 0px 2px;
+      font-size: 95%;
+      font-weight: bold;
+  
+      background-image: radial-gradient(ellipse farthest-corner at 100% 100%, #c4c4c4, #ffffff);
+    } 
+  </style>
+</head>
+
+<body>
+
+  <h1>4. gyakorlat</h1>
+  <h2>Aritmetikai és bit műveletek, operátorok</h2>
+  <p><em><strong>Emlékeztető:</strong></em></p>
+  <ul>
+  <li>Fordítás közben használd a <strong>-W, -Wall, -Wextra, -pedantic</strong> kapcsolókat!</li>
+  <li>Az egyes feladatokat szervezzük ki saját alprogramba!</li>
+  <li>Használjuk segítségnek a hivatalos dokumentációt is: <a href="https://en.cppreference.com/w/c">C reference</a></li>
+  </ul>
+  <h3>Kötelező feladatok</h3>
+  <ol>
+  <li>Vizsgáld meg, mi a különbség a prefix ++ (<code>++i</code>) és a posztfix ++ (<code>i++</code>) operátorok között!</li>
+  <li>Egy ciklus segítségével olvass be pár betűt, és ha kisbetű, konvertáld nagybetűvé, ha nagybetű, akkor kisbetűvé! (Az eddig megismert <code>scanf()</code> mellé megnézhetjük a <code>getchar()</code> függvény működését is. )</li>
+  </ol>
+  <blockquote>
+  <ul>
+  <li>Igyekezzünk hibabiztosra írni a kódot, nem karakter esetén, jelezzük a hibát a felhasználónak és kérjünk be új betűt!</li>
+  <li>A beolvasott karakterek mennyiségét többféle képpen szabályozhatjuk:
+  <ul>
+  <li>előre meghatározott számú karaktert olvasunk (<em>n db</em>)</li>
+  <li>külön megválasztott lezáró karakterig olvasunk (pl. bemeneten <em>0</em>-t kapunk)</li>
+  <li><em><strong>haladó szint:</strong></em> <code>EOF</code> használatával (linuxban: <strong>Ctrl+D</strong>; windowsban: <strong>Ctrl+Z</strong> (<strong>Enter</strong>) )</li>
+  </ul>
+  </li>
+  </ul>
+  </blockquote>
+  <ol start="3">
+  <li>Olvass be két számot, és végezd el rajtuk az összes lehetséges aritmetikai műveletet!</li>
+  <li>Olvasd be egy kör sugarát, és számold ki a kör átmérőjét, kerületét és területét!</li>
+  <li>Olvass be egy dátumot pozitív egész számként (egybeirva!), majd írd ki valamilyen dátum formátumban (év. hónap. nap. / DD-MM-YYYY / ...)!</li>
+  <li>Állapítsd meg 2-2 koordináta-rendszerbeli pontról, hogy az általuk alkotott egyenesek merőlegesek-e egymásra!</li>
+  <li>Olvass be két számot egy-egy változóba, és csak aritmetikai műveletek segítségével cseréld meg őket!</li>
+  <li>Fordítsd meg egy szám bitjeit! Mi lesz az eredmény?</li>
+  </ol>
+  <h3>Gyakorló feladatok</h3>
+  <ol>
+  <li>Olvasd be egy egyenlő szárú háromszög oldalait, és számold ki a háromszög területét és kerületét!</li>
+  <li>Olvasd be egy téglalap oldalait, és számold ki a területét és a kerületét!</li>
+  <li>Olvass be két számot, és emeld az egyik számot a másik hatványra! Mindkét irányba végezd el a feladatot!</li>
+  </ol>
+  <h3>Haladó feladatok</h3>
+  <ol>
+  <li>Döntsd el egy számról csak bitműveletek használatával, hogy páros vagy páratlan!</li>
+  <li>Olvass be két számot, és írasd ki a két szám között lévő összes prímszámot!</li>
+  <li>Fordítsd meg egy szám n-edik bitjét! Mi az eredmény?</li>
+  <li>Számítsd ki egy szám prímtényezős felbontását!</li>
+  <li><strong>Dátum v2</strong> Olvassunk be egy tetszőleges természetes számot. Induljunk ki egy alap dátumból <code>n=0</code> esetén (pl.: <em>1800.01.01.</em>). A kapott egész szám az ezóta eltelt napok számát jelentse. Írjuk ki a meghatározott dátumot formázva. <em>Egyszerűsítés: tekinthejük az összes hónapot azonos méretűnek</em></li>
+  </ol>
+  <blockquote>
+  <ul>
+  <li><em><strong>profi szint:</strong></em> A hónapokat megfelelő hosszal tekintjük</li>
+  <li><em><strong>mester szint:</strong></em> Figyelembe vesszük a szökőéveket is</li>
+  </ul>
+  </blockquote>
+  
+  
+</body>
+</html>
