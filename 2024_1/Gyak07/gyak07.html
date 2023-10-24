@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>ImpProg_gy07</title>
+  <meta charset="UTF-8">
+
+  <style>
+    code {
+      font-family: Consolas, Monaco, Menlo, "Courier New", monospace;
+      color: darkgreen;
+      background-color: #f1f1f1;
+      padding: 0px 2px;
+      font-size: 95%;
+      font-weight: bold;
+  
+      background-image: radial-gradient(ellipse farthest-corner at 100% 100%, #c4c4c4, #ffffff);
+    } 
+  </style>
+</head>
+
+<body>
+
+  <h1>7. gyakorlat</h1>
+  <h2>Tömbök, pointerek</h2>
+  <p><em><strong>Emlékeztető:</strong></em></p>
+  <ul>
+  <li>Fordítás közben használd a <strong>-W, -Wall, -Wextra, -pedantic</strong> kapcsolókat!</li>
+  <li>Használjuk segítségnek a hivatalos dokumentációt is: <a href="https://en.cppreference.com/w/c">C reference</a></li>
+  </ul>
+  <h3>Kötelező feladatok</h3>
+  <ol>
+  <li>Olvassunk be hexadecimális számokat a standard bemenetről (<em>0-9,a,b,c,d,e,f</em> karakterek), amíg <code>EOF</code> nem érkezik.
+  A beolvasott számokat konvertáljuk át 10-es számrendszerbe, majd tároljuk őket.</li>
+  </ol>
+  <blockquote>
+  <ul>
+  <li>Használd ki a karakter-szám &quot;átjárhatóságot&quot;</li>
+  <li>Csak a megfelelő karaktereket fogadjuk el, minden mást vessünk el (nagybetű belefér) és jelezzük a hibát</li>
+  <li><code>EOF</code> használata linuxban: <strong>Ctrl+D</strong>; windowsban: <strong>Ctrl+Z</strong> (<strong>Enter</strong>)</li>
+  <li>Jobb eszköz híján válasszunk egy &quot;kellően&quot; nagy tömböt a várható számok tárolásához</li>
+  </ul>
+  </blockquote>
+  <ol start="2">
+  <li>Készíts egy alprogramot, amely egy paraméterben kapott nxn-es mátrixot feltölt az n-es szorzótábla értékeivel. Majd írasd ki a főprogramban az egészet a standard kimenetre a következő formátumban: <em>a x b = c</em>, ahol <em>a</em> és <em>b</em> a szorzandó elemek, <em>c</em> pedig a mátrixban tárolt érték.</li>
+  <li>Írj programot, amely 1-től n-ig kiszámolja a pozitív számok összegét. <em>n</em>-et olvasd be a standard inputról, ad át a paramétert egy alprogramnak, mely visszatér az eredménnyel.</li>
+  <li>Írj programot, amely kiírja egy szám első n hatványát! A számot olvasd be a standard inputról.</li>
+  <li>Írj programot, amely megcseréli egy legalább <em>3</em> jegyű szám első és utolsó számjegyét!</li>
+  </ol>
+  <blockquote>
+  <ul>
+  <li>Tetszőleges sok számjegyű számra működjön!</li>
+  </ul>
+  </blockquote>
+  <ol start="6">
+  <li>Készíts egy alprogramot, mely feltölt egy kapott tömböt 0 és 100 közötti véletlen valós értékekkel. Ezután a főprogram állapítsa meg a tömbről, hogy hány eleme nagyobb 50-nél.</li>
+  </ol>
+  <h3>Gyakorló feladatok</h3>
+  <ol>
+  <li>Olvass be egy számot, és számítsd ki a számjegyeinek szorzatát!</li>
+  <li>Az előző feladathoz írd ki, hogy hány páros és páratlan számjegye van a számnak!</li>
+  <li>Találd meg és írd ki a képernyőre az összes Armstrong-számot 0 és N között. <em>N</em>-et olvasd be a standard inputról. Armstrong-számnak nevezünk egy <em>n</em> jegyű számot, ha minden számjegyét az <em>n</em>-edik hatványra emelve és összeadva, az eredeti számot kapjuk.</li>
+  </ol>
+  <blockquote>
+  <ul>
+  <li><em>Például a 153 esetében 153=1^3+3^3+5^3</em>.</li>
+  </ul>
+  </blockquote>
+  <ol start="4">
+  <li>Írj alprogramot, amely kiszámítja egy egész szám faktoriálisát! Milyen korlátai vannak a megoldásnak?</li>
+  </ol>
+  <h3>Haladó feladatok</h3>
+  <ol>
+  <li>Rajzold ki a Pascal háromszög első n sorát (n-et kérd be)! A 3. gyakorlattal ellentétben, most ne a képletet (n alatt k) használd, hanem segéd tömbök segítségével old meg és törd át a korábban jelentkező ábrázolási limitet!</li>
+  <li>Írj két függvényt, melyek egymást felváltva futnak. Az egyik, nevezzük a-nak, 2-vel osztja a paraméterként kapott értéket majd meghívja a b függvényt az eredménnyel, ha az nagyobb mint 0. A b függvény kivon 1-et a kapott értékből majd meghívja a-t a csökkentett értékkel, ha az még nagyobb mint 0. A kiinduló számot a felhasználótól kérd be, és számold, hány a-b iteráció történik, míg eléri a 0-át.</li>
+  <li>Tárolj el egy 4x4 mátrixban egy balra igazított karakterekből álló háromszöget. (Lásd lent egy példát.) A felhasználó adhasson meg 1-től 4-ig egy értéket, mellyel szabályozhatja, hogy a háromszöget milyen orientációval rajzoljuk ki a kimenetre. (Balos, balos fejtetőn, jobbos, jobbos fejtetőn.) Kerüljük a kód ismétlést! Egyetlen dupla ciklus segítségével old meg a kirajzolásokat!</li>
+  </ol>
+  <blockquote>
+  <ul>
+  <li>&amp;</li>
+  <li>&amp;&amp;</li>
+  <li>&amp;&amp;&amp;</li>
+  <li>&amp;&amp;&amp;&amp;</li>
+  </ul>
+  </blockquote>
+  
+  
+</body>
+</html>
+
