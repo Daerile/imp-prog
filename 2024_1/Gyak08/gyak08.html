@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>ImpProg_gy08</title>
+  <meta charset="UTF-8">
+
+  <style>
+    code {
+      font-family: Consolas, Monaco, Menlo, "Courier New", monospace;
+      color: darkgreen;
+      background-color: #f1f1f1;
+      padding: 0px 2px;
+      font-size: 95%;
+      font-weight: bold;
+  
+      background-image: radial-gradient(ellipse farthest-corner at 100% 100%, #c4c4c4, #ffffff);
+    } 
+  </style>
+</head>
+
+<body>
+
+  <h1>8. gyakorlat</h1>
+  <h2>Gyakorlás a ZH-ra</h2>
+  <p>A zárthelyi alatt egy programozási feladatot kell megoldani, legfeljebb <strong>50 pont</strong>ért. Legalább <strong>10 pont</strong>ot kell gyűjteni a tárgy sikeres teljesítéshez. A megoldásra <strong>180 perc</strong> áll rendelkezésre. A megoldáshoz semmilyen segédeszköz nem használható, kivéve a <a href="https://en.cppreference.com/w/c">C referenciát</a>. A végén csak az egy darab forráskódot (<strong>.c</strong> állomány) kell feltölteni.</p>
+  <h3>Elvárások a programmal szemben</h3>
+  <ul>
+  <li>A program végleges verziójának működő képesnek kell lennie. Forduljon és fusson! A nem forduló kód <strong>0 pont</strong>ot ér!</li>
+  <li>Ne használj globális változókat! Csak a makrók megengedettek!</li>
+  <li>Logikusan tagold a megoldást! A megoldás részeit külön függvényekben valósítsad meg!</li>
+  <li>Kerüld a nem definiált viselkedést okozó utasításokat! <strong>A végleges programban ezek megléte pont levonással jár!</strong></li>
+  </ul>
+  <h3>Torpedó</h3>
+  <p>A torpedó egy olyan kétszemélyes játék, amelyet egy 10 * 10-es táblán játszanak, a sorokat 1-től 10-ig számokkal, az oszlopokat A-tól J-ig betűvel jelölik. A játék elején el kell helyeznünk 5 hajót a táblán olyan módon, hogy a hajók semmilyen módon ne érintkezzenek, még sarkokkal se. Az elhelyezendő hajók hossza: 2, 3, 3, 4, 5 egység. A feladat egy tábla felállításának, a hajók elhelyezésének validációja.</p>
+  <h3>10 pont</h3>
+  <p>A programban a táblát reprezentálja egy kétdimenziós, egészeket tároló tömb, ahol a tábla magassága (tehát a sorok száma) és szélessége (az oszlopok száma) 10.  A szélességet és a magasságot makróként vegyük fel.</p>
+  <p>Ezen felül legyen egy tömbünk, amelyben az elhelyezett hajók számát tudjuk karbantartani (sorrendben a két, három, négy és öt hosszúságú elhelyezett hajók számát).</p>
+  <p>Írjuk meg az <code>init</code> függvényt, amelyet a játék kezdetekor hívunk meg. Ez a függvény üresre állítja a tábla minden “mezőjét” és a hajók számát tároló tömböt is.</p>
+  <p>Legyen a programban egy <code>printTable</code> nevű függvény, amely a tábla aktuális állapotát jeleníti meg a képernyőn.</p>
+  <h3>25 pont</h3>
+  <p>Írjuk meg a <code>submit</code> függvényt, amely a tömbökön kívül paraméterként megkapja, hogy milyen pozíción kezdődik az elhelyezendő hajó, mekkora a hossza, valamint azt, hogy vízszintesen vagy függőlegesen kell elhelyezni a hajót. A függvény ellenőrzi, hogy a hajó lehelyezhető-e a megadott helyre, elhelyezi a táblában, és valamilyen módon visszajuttatja a hívóhoz azt az információt, hogy sikeresen lehet-e elhelyezni a hajót a pályán. Ehhez ellenőrizni kell, hogy az elhelyezendő hajó megfelelő méretű-e, nem lóg-e le pályáról, és nem érintkezik-e korábban már elhelyezett hajóval. Feltehető, hogy a megadott pozíció valid, de azt ellenőrizni kell, hogy a hajó nem lóg-e ki a pályáról.</p>
+  <p>A <code>submit</code> függvényhez készíthetsz segédfüggvényeket, amelyek a feltételvizsgálatokat végzik el. A függvények írjanak ki hibaüzenetet, ha valamelyik feltétel nem teljesül, és ebben az esetben lépjenek tovább a következő inputra.</p>
+  <p><em>Megjegyzés: a pozíció átadható szöveges formátumban, pl. “C4”, vagy “E10” formátumban, de akár két külön paraméterként, pl. ‘C’, 4 vagy ‘E’, 10.</em></p>
+  <h3>15 pont</h3>
+  <p>A <code>main</code> függvényben az előzőleg ismertetett <code>init</code> és <code>submit</code> függvények meghívásával állíts össze többféle állást és döntsd el, hogy a torpedó pálya szabályosan van-e összeállítva, azaz megfelelően elhelyezett és megfelelő számú hajó van-e lerakva. Átfogóan teszteld az eseteket. A pálya állása legalább egyszer, a játék végén jelenjen meg a képernyőn.</p>
+  <p>Egy példa input, ahol _ jelöli a vízszintes, | a függőleges irányt:</p>
+  <p>{&quot;A1&quot;,3,'|'}, {&quot;I3&quot;,2,'_'}, {&quot;I3&quot;,3,'_'}, {&quot;F6&quot;,5,'|'}, {&quot;F7&quot;,5,'|'},
+  {&quot;A1&quot;,2,'_'}, {&quot;I4&quot;,4,'|'}, {&quot;C3&quot;,4,'_'}, {&quot;G9&quot;,3,'_'}, {&quot;B5&quot;,3,'_'},
+  {&quot;I7&quot;,3,'|'}, {&quot;J7&quot;,2,'|'}, {&quot;J7&quot;,1,'|'}</p>
+  
+    
+  
+  
+</body>
+</html>
+
