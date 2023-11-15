@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>ImpProg_gy09</title>
+  <meta charset="UTF-8">
+
+  <style>
+    code {
+      font-family: Consolas, Monaco, Menlo, "Courier New", monospace;
+      color: darkgreen;
+      background-color: #f1f1f1;
+      padding: 0px 2px;
+      font-size: 95%;
+      font-weight: bold;
+  
+      background-image: radial-gradient(ellipse farthest-corner at 100% 100%, #c4c4c4, #ffffff);
+    } 
+  </style>
+</head>
+
+<body>
+
+  <h1>9. gyakorlat</h1>
+  <h2>Láthatóság, blokkok, modulok</h2>
+  <h3>Kötelező feladatok</h3>
+  <ol>
+  <li>Deklarálj és definiálj egy változót a main függvényen kívül! Változtasd az értékét és írasd ki!</li>
+  <li>Készíts egy függvényt, benne deklarálj és definiálj egy változót! El tudod érni a változót a függvényen kívül?</li>
+  <li>Írj egy elágazást az előző feladatban megírt függvénybe a változó definíció után! Vizsgáld meg, hogy a változót eléred-e az <code>if</code> feltételében, valamint az igaz blokkjában, továbbá opcionálisan az <code>else</code> és <code>else if</code> ágában!</li>
+  <li>Deklarálj és definiálj változót egy <code>if</code> bármelyik ágában, vagy egy tetszőleges ciklus magjában! Vizsgáld meg, hogy a változót eléred-e a blokkon kívül!</li>
+  <li>Hozz létre egymásba ágyazott scope-okat (&quot;{}&quot; párok közti blokkokat), vezess be mindegyikben egy változót! Vizsgáld, hogy melyik scope-ból melyik változókat éred el! Mikor lehet érdemes scope-okat használni? Mi az a verem és miképp csatlakozik a scope kezeléshez?</li>
+  <li>Deklarálj előre egy függvényt, majd definiáld azt, paraméterül más paraméterneveket használva! Mi történik? Mikor lehet ez hasznos?</li>
+  <li>Deklarálj egy kétparaméterű függvényt, ugyanazon változónevet használva a két paraméternek! Mi történik?</li>
+  </ol>
+  <blockquote>
+  <p>Hozz létre egy <strong>my_utils.h</strong> és <strong>my_utils.c</strong> fájlt! Az elkövetkezendő feladatok (8,9,10) függvény deklarációit helyezd a header file-ba, a definícióit pedig a c fájlba. Az eddigi <strong>main.c</strong> fájlban include-old a headert, majd a main-ben hívd a függvényeket!</p>
+  </blockquote>
+  <ol start="8">
+  <li>Hozz létre egy függvényt, deklarálj és definiálj benne egy <code>static</code> változót! Növeld meg a változó értékét és írasd ki! Hívd meg a <code>main</code>-ben többször is a függvényt! Mi történik?</li>
+  <li>Írj egy swap függvényt, amely megcseréli két int változó értékét!</li>
+  <li>Írj egy olyan függvényt, amely két int pointert vár paraméterül, és visszaadja a nagyobb értékre mutató pointert!</li>
+  <li>Módosítsd a swap feladatot úgy, hogy a függvényt a main-en belül deklarálod és definiálod! Működik-e a program GCC és Clang fordítóval? Mikor lehet ez a funkcionalitás hasznos?</li>
+  </ol>
+  <h3>Opcionális gyakorló feladatok</h3>
+  <ol>
+  <li>Deklarálj és definiálj egy változót egy ciklus magjában, majd ágyazz be egy második ciklust és vizsgáld, hogy azon belül eléred-e a külső ciklusban deklarált változót!</li>
+  <li>Static változó segítségével hozz létre egy olyan faktoriális függvényt, mely számon tartja, hogy hányszor hívták 1-nél kisebb paraméterrel!</li>
+  <li>Írj egy olyan függvényt, amely két <code>int</code>-et vár paraméterül és egy, az eredményre mutató pointert ad vissza! Mi történik, mikor a <code>main</code>-ben kiírod az eredményt (dereferálva)?</li>
+  </ol>
+  <h3>Haladó feladatok</h3>
+  <ol>
+  <li>Hozz létre külön modulokat (.h és .c párokat) az eddigi gyakorlatok függvényeiből! pl Matematikai modult (faktoriális, stb), String Utils modult (strlen, strcpy saját implementációk), ArrayUtils modult! Fordítsd le a modulokat külön-külön, majd írj egy main.c fájlt, melyben include-olod őket és használod a függvényeikat, viszont úgy fordítsd a <strong>main.c</strong> állományt, hogy a hivatkozott libeket ne fordítsd újra!</li>
+  <li>Hozz létre további függcényeket a <strong>my_utils.c</strong> file-ban! A függvények hivatkozzanak egymásra! Ezeket a függvényeket meg tudod hívni a <strong>main.c</strong> fájlban is? Miért? Miért nem?</li>
+  </ol>
+  
+  
+  
+</body>
+</html>
+
