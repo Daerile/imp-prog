@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>ImpProg_gy10</title>
+  <meta charset="UTF-8">
+
+  <style>
+    code {
+      font-family: Consolas, Monaco, Menlo, "Courier New", monospace;
+      color: darkgreen;
+      background-color: #f1f1f1;
+      padding: 0px 2px;
+      font-size: 95%;
+      font-weight: bold;
+  
+      background-image: radial-gradient(ellipse farthest-corner at 100% 100%, #c4c4c4, #ffffff);
+    } 
+  </style>
+</head>
+
+<body>
+
+  <h1>10. gyakorlat</h1>
+  <h2>Stringek, Fájlok</h2>
+  <p><em><strong>Emlékeztető:</strong></em></p>
+  <ul>
+  <li>Fordítás közben használd a <strong>-W, -Wall, -Wextra, -pedantic</strong> kapcsolókat!</li>
+  <li>A feladatokat headerekre és forrásfájlokra tagolva oldjuk meg!</li>
+  </ul>
+  <h3>Kötelező feladatok</h3>
+  <ol start="0">
+  <li>Készíts a main-ben egy menüt, melyben külön menüpontok alá tudod elhelyezni a megírandó feladatok alprogramjait. A felhasználó parancssori argumentumok segítségével tudja indítani a kívánt programot a kívánt módon (saját vagy beépített megoldás), ha releváns.</li>
+  <li>Írj programot, amely beolvas egy stringet a standard inputról, és megszámolja benne a karakterek és a szavak számát! A beolvasáshoz használd az <code>fgets</code> függvényt.</li>
+  <li>Írj programot, amely beolvas egy második stringet, és összehasonlítja az előzővel! A feladatot végezd el beépített művelettel a <code>string.h</code> könyvtárból, és anélkül is.</li>
+  <li>Másold le az előző stringet egy harmadik stringbe! A feladatot végezd el beépített művelettel és anélkül is.</li>
+  <li>Hozz létre egy stringet karakterek tömbjeként és egyet pointerként! Próbálj meg kicserélni mindkét változatban egy-egy karaktert! Mi a különbség a kettő között?</li>
+  <li>Hozz létre egy szöveges fájlt tetszőleges szöveggel. Írj programot, amelyben megnyitod a fájlt az <code>fopen</code> függvény segítségével, és olvasd be a fájl tartalmát az <code>fgets</code> függvény meghívásával. A beolvasott szöveget konvertáld csupa nagybetűssé, és írd ki a nagybetűs szöveget a standard inputra! A beolvasás után zárd be a fájlt az <code>fclose</code> függvénnyel.</li>
+  <li>Egészítsd ki az előző feladatot úgy, hogy a nagybetűs szöveget nem a standard inputra írod ki, hanem egy másik fájlba, az <code>fprintf</code> függvény segítségével. Az új fájl létrehozásához is használd az <code>fopen</code> függvényt.</li>
+  </ol>
+  <h3>Opcionális feladatok</h3>
+  <ol>
+  <li>Írj programot, amely megállapítja egy stringről, hogy az palindrom-e.</li>
+  <li>Hozz létre két új fájlt, amelyek ugyanannyi tetszőleges számot tartalmaznak. Olvasd be mindkét fájlból párhuzamosan a számokat, és írd ki a szorzatukat egy harmadik fájlba! A beolvasáshoz használd a <code>fscanf</code> függvényt.</li>
+  <li>Vizsgáld meg, hogy a tanult beolvasó függvények közül melyek alkalmasak karakterek egyesével történő beolvasására a standard inputról!</li>
+  </ol>
+  <h3>Gyakorló feladatok</h3>
+  <ol>
+  <li>Írj egy számológép alkalmazást, amely képes a <strong>+, -, *, /</strong> és <strong>%</strong> műveletek elvégzésére egész számokon (külön modulba)! Írj menüt is a programhoz! Addig fusson a program, amíg a felhasználó &quot;exit&quot; utasítást nem ad.</li>
+  <li>Módosítsd a számológép alkalmazást úgy, hogy induláskor a felhasználó választhassa ki, hogy az egész vagy a valós számokon értelmezett műveletekkel szeretne dolgozni. Hozd létre a valós számokhoz tartozó műveletek modulját (<strong>+, -, *, /</strong>, ahol / most a valós osztásnak felel meg).</li>
+  <li>Bővítsd a számológép alkalmazást új tetszőleges modulokkal. (Pl.: hatványozó, trigonometrikus, memória modul stb.)</li>
+  </ol>
+  
+        
+  
+</body>
+</html>
+
