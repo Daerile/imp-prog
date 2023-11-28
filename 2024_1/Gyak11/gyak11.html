@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>ImpProg_gy11</title>
+  <meta charset="UTF-8">
+
+  <style>
+    code {
+      font-family: Consolas, Monaco, Menlo, "Courier New", monospace;
+      color: darkgreen;
+      background-color: #f1f1f1;
+      padding: 0px 2px;
+      font-size: 95%;
+      font-weight: bold;
+  
+      background-image: radial-gradient(ellipse farthest-corner at 100% 100%, #c4c4c4, #ffffff);
+    } 
+  </style>
+</head>
+
+<body>
+
+  <h1>11. gyakorlat</h1>
+  <h2>Dinamikus memóriakezelés</h2>
+  <p><em><strong>Emlékeztető:</strong></em></p>
+  <ul>
+  <li>Fordítás közben használd a <strong>-W, -Wall, -Wextra, -pedantic</strong> kapcsolókat!</li>
+  <li>A feladatokat headerekre és forrásfájlokra tagolva oldjuk meg!</li>
+  </ul>
+  <h3>Kötelező feladatok</h3>
+  <ol>
+  <li>Írj egy programot, ami bekér a felhasználótól egy legfeljebb <strong>20</strong> karakter hosszú szöveget, és készít belőle egy másolatot. Ügyelj arra, hogy a másolat csak akkora memóriaterületet használjon, ami feltétlenül szükséges.</li>
+  <li>Készíts egy <em><code>reverse()</code></em> nevű függvényt, aminek egy string paramétere van. A függvény fordítsa meg a string karaktereit helyben. Azaz függvény az eredményt ugyanazon a memóriaterületen adja vissza, amit paraméterként kapott. Például egy palindrom string karakterei nem változnak meg a függvényben.</li>
+  <li>Módosítsd az előző <em><code>reverse()</code></em> nevű függvényt úgy, hogy ne helyben cserélje a karaktereket, hanem egy másik stringet hozzon létre, és azzal térjen vissza. Dinamikusan foglald a szükséges memóriát!</li>
+  <li>Írj programot, ami <strong>5</strong> szót olvas be a felhasználótól, és kiírja fordított sorrendben őket. Használj dinamikus tömböt!</li>
+  <li>Írj egy programot, ami parancssori argumentumként vár egy számot, és annyi szót olvas be a felhasználótól, amennyit megadott. Ha mindet megadta, írja ki fordított sorrendben a szavakat. Használj dinamikus tömböt!</li>
+  <li>Módosítsd az előző feladat megoldását úgy, hogy ha a felhasználó az <strong>end</strong> szót írja be, akkor a beolvasás véget ér, mielőtt elérné a parancssori argumentumként megadott limitet. Használj dinamikus tömböt! Majd írd ki a tömb tartalmát fordított sorrendben.</li>
+  <li>Módosítsd az előző feladat megoldását úgy, hogy a program már nem kér be a felhasználótól parancssori argumentumot, hanem addig olvasunk be szavakat a felhasználótól, amíg nem <strong>EOF</strong> a bemenet, majd kiírja őket fordított sorrendben. Ha végzett a kiírással, újból várjon szavakat. Használj dinamikus tömböt! Ügyelj arra, hogy ne keletkezzen memóriaszemét.</li>
+  </ol>
+  <h3>Opcionális feladatok</h3>
+  <ol>
+  <li>Készíts egy függvényt, ami egészek tömbjét várja paraméterül. A függvény térjen vissza egy másik tömbbel, amiben a paraméter tömb elemei szortírozva találhatók: elöl a párosak, hátul a páratlanok. Dinamikusan kezeld a memóriát!</li>
+  </ol>
+  <h3>Gyakorló feladatok</h3>
+  <ol>
+  <li>Adott egy fájl, aminek minden sorában számok vannak szóközökkel elválasztva. Írj egy programot, mely soronként olvas ebből a fájlból, és minden sort növekvő számsorrendben kiír egy output.txt nevű fájlba. Dinamikusan kezeld a memóriát!</li>
+  <li>Írj programot, amely számontartja egy cég alkalmazottai a felvételük sorrendjében. Vegyél fel egy struktúrát, amely eltárolja az alkalmazott nevét és fizetését. A program futás közben folyamatosan kérjen be adatokat új alkalmazottakról, és minden &quot;felvétel&quot; után írja ki az összes alkalmazott adatait! A program fejezze be a futást, ha a felhasználó az <strong>exit</strong> szót írja be. Dinamikusan kezeld a memóriát! Ügyelj rá, hogy optimális legyen a dinamikus memóriafoglalás!</li>
+  </ol>
+  
+    
+  
+</body>
+</html>
+
