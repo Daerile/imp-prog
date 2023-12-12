@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>ImpProg_gy12</title>
+  <meta charset="UTF-8">
+
+  <style>
+    code {
+      font-family: Consolas, Monaco, Menlo, "Courier New", monospace;
+      color: darkgreen;
+      background-color: #f1f1f1;
+      padding: 0px 2px;
+      font-size: 95%;
+      font-weight: bold;
+  
+      background-image: radial-gradient(ellipse farthest-corner at 100% 100%, #c4c4c4, #ffffff);
+    } 
+  </style>
+</head>
+
+<body>
+
+  <h1>12. gyakorlat</h1>
+  <h2>Összetett adatszerkezetek</h2>
+  <p><em><strong>Emlékeztető:</strong></em></p>
+  <ul>
+  <li>Fordítás közben használd a <strong>-W, -Wall, -Wextra, -pedantic</strong> kapcsolókat!</li>
+  <li>A feladatokat headerekre és forrásfájlokra tagolva oldjuk meg!</li>
+  </ul>
+  <h3>Kötelező feladatok</h3>
+  <ol>
+  <li>Hozzunk létre egy új típust <code>Student</code> néven, mellyel hallgatókat fogunk reprezentálni. Tartalmazzon azonosítót, átlagot és kort. Az átlag típusa legyen kétszeresen pontos lebegőpontos szám, a többi egész szám. Vizsgáljuk meg a memóriaszükségletét a típusnak, kísérletezzünk az adattagok sorrendjével, és figyeljük meg ennek hatását.</li>
+  <li>A praktikusság jegyében hozzunk létre egy alias típust <code>typedef</code>fel, hogy a típust tudjuk a <code>struct</code> előtag nélkül is használni.</li>
+  <li>Hozzunk létre egy függvényt mely egy <code>Student</code> tömböt kap és visszaadja a legmagasabb átlagú hallgatónak az azonosítóját.</li>
+  <li>Kezeljük külön a BSc-s, MSc-s és PhD-s hallgatókat, erre hozzunk létre egy felsoroló típust (<code>enum</code>) <code>Type</code> néven és adjuk hozzá a Studenthez adattagként.</li>
+  <li>A hallgató típusától függően tároljunk különböző plusz adatokat egy <code>union</code> típus segítségével.</li>
+  </ol>
+  <ul>
+  <li><strong>BSc:</strong> összesen hallgatott kurzusok száma(<code>int</code>).</li>
+  <li><strong>MSc:</strong> az összesített korrigált kreditindex(<code>double</code>)</li>
+  <li><strong>PhD:</strong> legmagasabb impaktfaktorú folyóiratnak az impaktfaktora, melybe publikált (<code>double</code>), illetve Erdős-számát (<code>int</code>) egy struct segítségével.</li>
+  </ul>
+  <p>Vizsgáljuk meg a típus memóriaszükségletét és vessük össze, mi lett volna, ha structot használunk helyette.
+  6. Írjunk egy függvényt(<code>student_init</code>) mely egy <code>Type</code> paramétert kapva, létrehoz a heapen egy <code>Student</code> példányt a megfelelő <code>Type</code>-al, a megfelelő adattagokat feltölti random adatokkal, majd visszaad egy mutatót a példányra.
+  7. Töltsünk fel egy tömböt ilyen <code>Student</code> példányokra mutatókkal, majd módosítsuk a 3. feladatban irt függvényt, hogy azonosító helyett a példányra mutatót adjon vissza. Ügyeljünk a memóriaszivárgás elkerülésére.</p>
+  <h3>Opcionális feladatok</h3>
+  <ol>
+  <li>A korábbi órán megírt mátrixszorzáshoz, hozzunk létre egy <code>Matrix</code> típust, mely tartalmazza a mátrix dimenzióinak méretét, illetve a tömb első elemére mutatót adattagként.</li>
+  <li>Az indexelés könnyítése érdekében írjunk egy <code>at</code> függvényt, mely vár egy mátrix példányra mutató pointert, sor és oszlop indexet, és ezek alapján visszatér a indexek által jelölt mátrix elemre mutató pointerrel.</li>
+  <li>Alakítsuk át a mátrixszorzást ezek segítségével.</li>
+  </ol>
+  <h3>Gyakorló feladatok</h3>
+  <ol>
+  <li>Hozzunk létre egy egészeket tartalmazó dinamikus tömb típust, mely adattagként tárolja a tömb aktuális méretét, kapacitását és egy tömbre mutatót.</li>
+  <li>Hozzunk létre egy függvényt mely a paraméterül kapott kezdeti kapacitás alapján létrehoz egy új példányt, megfelelően beállított adattagokkal. Majd ennek párját, mely megfelelően felszabadítja a kapott példányt.</li>
+  <li>Írjunk egy függvényt mellyel hozzá tudunk adni egy elemet a tömb végére. Ha megtelt a tömb, foglaljunk le egy kétszer nagyobb tömböt, majd a korábbi elemeket másoljuk át és frissítsük az adattagokat. Ügyeljünk a memóriaszivárgásra.</li>
+  </ol>
+  
+  
+    
+  
+</body>
+</html>
+
